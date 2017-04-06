@@ -31,7 +31,7 @@ class Ratings(models.Model):
 
     movie_id = models.ForeignKey(Movie)
     user_id = models.ForeignKey(User)
-    score = models.IntegerField()
+    score = models.FloatField()
 
     def __str__(self):
         s = "id=%s movie_id=%s user_id=%s score=%s"
