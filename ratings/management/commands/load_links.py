@@ -11,4 +11,4 @@ class Command(BaseCommand):
             links = csv.DictReader(links)
             for row in links:
                 movieID = row['movieId']
-                new_movie = Movie.objects.filter(id=movieID).update(imdb_id=row['imdbId'],tmdb_id=row['tmdbId'])
+                new_movie = Movie.objects.filter(movie_id=movieID).update(imdb_id=row['imdbId'],tmdb_id=row['tmdbId'])

@@ -12,7 +12,7 @@ class Command(BaseCommand):
             # path to movies.csv
             'data/movies.csv',
             # dict mapping model title to csv header
-            dict(title='title'),
+            dict(movie_id='movieId', movie_title='title'),
             static_mapping = {
                 'imdb_id': '',
                 'tmdb_id': ''
